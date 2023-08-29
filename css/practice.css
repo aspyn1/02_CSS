@@ -1,0 +1,96 @@
+/* 연습문제 1 */
+
+*{
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    width: 500px;
+    height: 300px;
+}
+
+.header{
+    background-color: gray;
+    height: 10%;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.footer{
+    background-color: gray;
+    height: 10%;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    height: 80%;
+}
+
+.left{
+    width: 20%;
+    background-color: skyblue;
+    border-right: 1px solid gray;
+    text-align: center;
+}
+
+.center{
+    width: 60%;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.right{
+    width: 20%;
+    background-color: orange;
+    border-left: 1px solid gray;
+    text-align: center;
+}
+
+/* 연습문제 2 */
+
+.flex-container2{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    width: 500px;
+    height: 300px;
+}
+
+.Header{
+    height: 20%;
+    border: 2px solid whi;
+    background-color: red;
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    height: 80%;
+}
+
+.Nav{
+    background-color: yellow;
+    width: 20%;
+    text-align: center;
+}
+
+.Content{
+    width: 80%;
+}
+
+.Content2{
+    background-color: greenyellow;
+    height: 70%;
+    text-align: center;
+}
+
+.Footer{
+    background-color: aqua;
+    height: 30%;
+    text-align: center;
+}
