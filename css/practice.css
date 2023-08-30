@@ -12,40 +12,32 @@
     height: 300px;
 }
 
-.header{
+.header, .footer{
     background-color: gray;
-    height: 10%;
-    padding-left: 20px;
-    text-align: center;
-}
-
-.footer{
-    background-color: gray;
-    height: 10%;
-    padding-left: 20px;
+    flex-basis: 20%;
     text-align: center;
 }
 
 .content{
     display: flex;
-    height: 80%;
+    flex-basis: 60%;
 }
 
 .left{
-    width: 20%;
+    flex-basis: 30%;
     background-color: skyblue;
     border-right: 1px solid gray;
     text-align: center;
 }
 
 .center{
-    width: 60%;
+    flex-basis: 50%;
     background-color: lightgray;
     text-align: center;
 }
 
 .right{
-    width: 20%;
+    flex-basis: 20%;
     background-color: orange;
     border-left: 1px solid gray;
     text-align: center;
@@ -63,7 +55,6 @@
 
 .Header{
     height: 20%;
-    border: 2px solid whi;
     background-color: red;
     text-align: center;
 }
@@ -75,22 +66,257 @@
 
 .Nav{
     background-color: yellow;
-    width: 20%;
+    width: 30%;
     text-align: center;
 }
 
 .Content{
-    width: 80%;
+    width: 70%;    
+    display: flex;
+    flex-direction: column;
 }
 
 .Content2{
     background-color: greenyellow;
-    height: 70%;
+    height: 80%;
     text-align: center;
 }
 
 .Footer{
     background-color: aqua;
-    height: 30%;
+    height: 20%;
     text-align: center;
+}
+
+/* 연습문제 3 */
+.flex-container3{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 300px;
+    width: 500px;
+}
+
+.header2{
+    border: 1px solid black;
+    background-color: goldenrod;
+    flex-basis: 30%;
+
+    display: flex;
+}
+
+.home, .search{
+    flex-basis: 10%;
+}
+
+.logout{
+    flex-basis: 80%;
+}
+
+.Nav2{
+    flex-basis: 70%;
+    display: flex;
+}
+
+.left-sidebar{
+    flex-basis: 30%;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+.content3{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+}
+
+.content4{
+    display: flex;
+    flex-basis: 50%;
+}
+
+.main2{
+    background-color: aquamarine;
+    flex-basis: 70%;
+}
+
+.right-sidebar{
+    background-color: orangered;
+    flex-basis: 30%;
+}
+
+.footer2{
+    flex-basis: 50%;
+    background-color: crimson;
+}
+
+/* 연습문제4 */
+
+.flex-container4{
+    display: flex;
+    flex-direction: column;
+
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.header4, .footer4{
+    flex-basis: 20%;
+    
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+.body4{
+    display: flex;
+
+    flex-basis: 60%;
+    border: 1px solid black;
+}
+
+.aside{
+    flex-basis: 30%;
+    background-color: olivedrab;
+}
+
+.article{
+    flex-basis: 70%;    
+    background-color: beige;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.image{
+    width: 30%;
+    height: 50%;
+    border: 1px solid black;
+    background-color: orange;
+}
+
+
+/* 연습문제 5 */
+
+.container5{
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid black;
+    width: 500px;
+    height: 300px;
+}
+
+.header5{
+    display: flex;
+    background-color: yellow;
+    flex-basis: 20%;
+    border: 1px solid black;
+}
+
+.yellow1{
+    flex-basis: 10%;
+    border: 1px solid black;
+}
+
+.yellow2, .yellow3{
+    flex-basis: 45%;
+    border: 1px solid black;
+}
+
+.body5{
+    flex-basis: 80%;
+    border: 1px solid black;
+
+    display: flex;
+}
+
+.content5-1{
+    flex-basis: 20%;
+    background-color: skyblue;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.content5-2, .content5-4{
+    flex-basis: 10%;
+    background-color: pink;
+    border: 1px solid black;
+}
+
+.content5-3{
+    flex-basis: 60%;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.blue1, .blue2, .blue3{
+    border: 1px solid black;
+    flex-basis: calc(100%/3);
+    /* calculator : 100%를 3등분 하기 */
+}
+
+.top{
+    flex-basis: 50%;
+    background-color: orange;    
+    border: 1px solid black;
+}
+
+.bottom{
+    flex-basis: 50%;
+    border: 1px solid black;
+    display: flex;
+}
+
+.bottom-1{
+    flex-basis: 50%;
+    background-color: forestgreen;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.green1, .green2{
+    flex-basis: 50%;
+    border: 1px solid black;
+}
+
+.red{
+    flex-basis: 50%;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.content5-4{
+    display: flex;
+    flex-direction: column;
+}
+
+/* .pink1, .pink3{
+    flex-basis: 20%;
+    border: 1px solid black;
+}
+
+.pink2{
+    flex-basis: 60%;
+    border: 1px solid black;
+} */
+
+/* pink라는 class를 주지않고 아래 처럼 사용할 수 도 있다. */
+
+.content5-4 > div:nth-of-type(1),
+.content5-4 > div:nth-of-type(3){
+    flex-basis: 20%;
+    border: 1px solid black;
+}
+
+.content5-4 > div:nth-of-type(2){
+    flex-basis: 60%;
+    border: 1px solid black;
 }
